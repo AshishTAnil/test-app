@@ -5,10 +5,14 @@ app_description = "customisation"
 app_email = "ashish@gmail.com"
 app_license = "mit"
 
-# doctype_js = {
-#     "Job Card": "public/js/job_card.js"
-# }
+# -----------------------------------------------------------
+# Client Scripts (Load JS from App)
+# -----------------------------------------------------------
+# Client Scripts (Load JS from App)
 
+doctype_js = {
+    "Request for Quotation": "public/js/rfq_supplier_rates.js"
+}
 # -----------------------------------------------------------
 # Document Events
 # -----------------------------------------------------------
@@ -38,6 +42,10 @@ doc_events = {
         "on_submit": "testapp.testapp.job_card_loss.create_process_loss_entry"
     }
 }
+
+# -----------------------------------------------------------
+# Optional Overrides
+# -----------------------------------------------------------
 # override_doctype_dashboards = {
 #     "Work Order": "testapp.work_order_dashboard.get_data"
 # }
