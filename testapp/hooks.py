@@ -11,7 +11,8 @@ app_license = "mit"
 # Client Scripts (Load JS from App)
 
 doctype_js = {
-    "Request for Quotation": "public/js/rfq_supplier_rates.js"
+    "Request for Quotation": "public/js/rfq_supplier_rates.js",
+    "Material Request": "public/js/material_request_priority.js"
 }
 # -----------------------------------------------------------
 # Document Events
@@ -49,3 +50,12 @@ doc_events = {
 # override_doctype_dashboards = {
 #     "Work Order": "testapp.work_order_dashboard.get_data"
 # }
+
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["fieldname", "=", "custom_priority"]
+        ]
+    }
+]
