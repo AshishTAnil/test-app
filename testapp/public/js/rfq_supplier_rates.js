@@ -9,13 +9,13 @@ frappe.ui.form.on('Request for Quotation', {
                 return;
             }
 
-            // collect item codes
+            
             let items = [];
             frm.doc.items.forEach(row => {
                 items.push(row.item_code);
             });
 
-            // collect suppliers
+            
             let suppliers = [];
             frm.doc.suppliers.forEach(row => {
                 suppliers.push(row.supplier);
