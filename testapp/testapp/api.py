@@ -4,7 +4,7 @@ import json
 @frappe.whitelist()
 def get_previous_supplier_rates(items, suppliers):
 
-    # convert string to list if needed
+    # vajra customization api to fetch previous supplier rates for given items and suppliers
     if isinstance(items, str):
         items = json.loads(items)
 
